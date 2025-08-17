@@ -25,11 +25,15 @@ export default function NewKeyValueComponent({
 	}
 
 	async function createKeyValue() {
-		const response = await fetch(`https://api.keys.kent.software/key_value/${key}/${value}`, {
+		const response = await fetch(`https://api.keys.kent.software/key_value/${key}`, {
 			headers: {
 				'Authorization': `Bearer ${apiKey}`,
+				'Content-Type': 'application/json',
 			},
 			method: 'POST',
+			body: JSON.stringify({
+				value,
+			}),
 		});
 
 		setKey('');

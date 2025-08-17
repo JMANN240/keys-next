@@ -8,8 +8,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "keys",
-  description: "EZPZ",
+  title: "🔑 Keys",
+  description: "No more juggling .env files!",
 };
 
 export default function RootLayout({

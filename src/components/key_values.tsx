@@ -38,7 +38,7 @@ export default function KeyValues() {
 		<>
 			{
 				keys &&
-				<div className="border-1 p-4 mt-6 w-2xl">
+				<div className="border-1 p-4 mt-6 w-4xl">
 					<h3 className="text-lg mb-4">Keys for {apiKey}</h3>
 					<ul>
 						{
